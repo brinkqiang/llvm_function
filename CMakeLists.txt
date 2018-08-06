@@ -22,6 +22,10 @@ ELSEIF (UNIX)
     SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread" )    
 ENDIF ()
 
+add_definitions(-D__STDC_LIMIT_MACROS)
+add_definitions(-D__STDC_CONSTANT_MACROS)
+add_definitions(-D__STDC_FORMAT_MACROS)
+ 
 
 SET(CMAKE_CXX_STANDARD 11)
 SET(LLVM_HOME /opt/llvm)
