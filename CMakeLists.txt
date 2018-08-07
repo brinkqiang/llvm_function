@@ -26,6 +26,8 @@ add_definitions(-D__STDC_LIMIT_MACROS)
 add_definitions(-D__STDC_CONSTANT_MACROS)
 add_definitions(-D__STDC_FORMAT_MACROS)
 
+INCLUDE(/usr/share/llvm/cmake/LLVM-Config.cmake)
+
 FIND_PACKAGE(LLVM REQUIRED CONFIG)
 FIND_PACKAGE(CLANG REQUIRED CONFIG)
 
