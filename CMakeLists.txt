@@ -22,13 +22,13 @@ ELSEIF (UNIX)
     SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread" )    
 ENDIF ()
 
-SET(LLVM_DIR )
+SET(LLVM_DIR "/usr/lib64/llvm5.0/lib/cmake/llvm")
 
 add_definitions(-D__STDC_LIMIT_MACROS)
 add_definitions(-D__STDC_CONSTANT_MACROS)
 add_definitions(-D__STDC_FORMAT_MACROS)
 
-FIND_PACKAGE(LLVM)
+find_package(LLVM 5.0 REQUIRED CONFIG)
 FIND_PACKAGE(CLANG)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
