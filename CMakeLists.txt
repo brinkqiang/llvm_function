@@ -24,10 +24,6 @@ ENDIF ()
 
 SET(LLVM_DIR "/usr/lib64/llvm5.0/lib/cmake/llvm")
 
-add_definitions(-D__STDC_LIMIT_MACROS)
-add_definitions(-D__STDC_CONSTANT_MACROS)
-add_definitions(-D__STDC_FORMAT_MACROS)
-
 find_package(LLVM REQUIRED CONFIG)
 FIND_PACKAGE(CLANG)
 
