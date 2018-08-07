@@ -24,8 +24,8 @@ ENDIF ()
 
 SET(LLVM_DIR "/usr/lib64/llvm5.0/lib/cmake/llvm")
 
-find_package(LLVM REQUIRED CONFIG)
-FIND_PACKAGE(CLANG REQUIRED)
+FIND_PACKAGE(LLVM REQUIRED CONFIG)
+FIND_PACKAGE(LibClang REQUIRED)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
