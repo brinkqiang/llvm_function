@@ -28,7 +28,7 @@ add_definitions(-D__STDC_LIMIT_MACROS)
 add_definitions(-D__STDC_CONSTANT_MACROS)
 add_definitions(-D__STDC_FORMAT_MACROS)
 
-find_package(LLVM 5.0 REQUIRED CONFIG)
+find_package(LLVM REQUIRED CONFIG)
 FIND_PACKAGE(CLANG)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
